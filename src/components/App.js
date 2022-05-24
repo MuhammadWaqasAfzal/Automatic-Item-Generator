@@ -318,22 +318,7 @@ class App extends React.PureComponent {
     allVaraiblesCases =   this.allPossibleVariablesCases(variablesArray);
     
     console.log("allVaraiblesCases",allVaraiblesCases);
-    // const allCases = [ 
-    //   '3,male,lab1',
-    //     '10,male,lab1',
-    //     '20,male,lab1',
-    //     '3,female,lab1',
-    //     '10,female,lab1',
-    //     '20,female,lab1',
-    //     '3,male,lab2',
-    //     '10,male,lab2',
-    //     '20,male,lab2',
-    //     '3,female,lab2',
-    //     '10,female,lab2',
-    //     '20,female,lab2' ];
-  
         
-    //console.log("allCases",allVaraiblesCases);
     let allStories = [];
     for (let i = 0; i < Object.keys(this.state.story).length; i++) {
       let story = this.state.story[Object.keys(this.state.story)[i]]
@@ -349,6 +334,7 @@ class App extends React.PureComponent {
 
     //console.log(allStories)
 
+    //This will have objects of story along with its question and option
     const items = [];
     var ans= [];
 
@@ -390,19 +376,8 @@ class App extends React.PureComponent {
       }
     }
 
+
     console.log(items);
-
-
-   // throw new Error("Something went badly wrong!");
-
-
-    // this.state.story.forEach(st =>{
-      
-    // });
-
-    // console.log(this.state.fields);
-   
-
 
 
     ///Waqas
